@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Hello, I am a Java web app! after 1st commit </title>
+    <title>Hello, I am a Java web app! after 2nd commit </title>
 </head>
 <body>
 <h1>Simple Java Web App Demo</h1>
