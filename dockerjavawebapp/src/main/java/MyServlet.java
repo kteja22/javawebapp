@@ -19,7 +19,7 @@ public class MyServlet extends HttpServlet {
             writer.println("</head>");
             writer.println("<body>");
 
-            writer.println("<h1>This is a simple java servlet after second commit.</h1>");
+            writer.println("<h1>This is a simple java servlet after third commit.</h1>");
 
             writer.println("</body>");
             writer.println("</html>");
