@@ -1,0 +1,6 @@
+projectKey=com.example:dockerjavawebapp
+serverUrl=http://localhost:9000
+serverVersion=8.7.0.41497
+dashboardUrl=http://localhost:9000/dashboard?id=com.example%3Adockerjavawebapp
+ceTaskId=AXg5-8kQlQYMWBggWao0
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXg5-8kQlQYMWBggWao0
