@@ -1,0 +1,6 @@
+projectKey=com.javacodegeeks:junitwebapp
+serverUrl=http://localhost:9000
+serverVersion=8.7.0.41497
+dashboardUrl=http://localhost:9000/dashboard?id=com.javacodegeeks%3Ajunitwebapp
+ceTaskId=AXiWo4NcZKfMgxtYzWhk
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXiWo4NcZKfMgxtYzWhk
