@@ -25,9 +25,4 @@ pipeline {
         }
             }
             }
-<<<<<<< HEAD:Jenkinsfile.txt
-=======
-        }
-    }
 
->>>>>>> ee079c7f635fcec386035cb645d7ad2d34e34b75:Jenkinsfile
