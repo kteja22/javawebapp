@@ -11,6 +11,11 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 '''
+
+            }
+        }
+        stage ('directory') {
+            steps {
                 bat '''
                     cd \Users\ak_mi\IdeaProjects\junitwebapp
                 '''
@@ -18,7 +23,7 @@ pipeline {
             }
         }
 
-        stage ('directory') {
+        stage ('build') {
             steps {
                 bat '''
                     mvn clean install
