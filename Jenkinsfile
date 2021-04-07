@@ -14,6 +14,15 @@ pipeline {
 
             }
         }
+        stage ('directory') {
+            steps {
+                bat '''
+                   cd \Users\ak_mi\IdeaProjects\junitwebapp
+                '''
+
+            }
+        }
+
 
         stage ('build') {
             steps {
