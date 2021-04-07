@@ -11,6 +11,10 @@ pipeline {
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 '''
+                bat '''
+                    cd \Users\ak_mi\IdeaProjects\junitwebapp
+                '''
+
             }
         }
 
