@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                bat '''
+                sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
                 '''
@@ -16,8 +16,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                bat 'cd \Users\ak_mi\IdeaProjects\junitwebapp' 
-                bat 'mvn clean install'
+                sh 'mvn -Dmaven.test.failure.ignore=true install' 
             }
             post {
                 success {
