@@ -24,6 +24,7 @@ pipeline {
 
         stage ('build') {
             steps {
+                bat 'cd /Users/ak_mi/IdeaProjects/junitwebapp'
                 bat '''
                     mvn clean install
                 '''
