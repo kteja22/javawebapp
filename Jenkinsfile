@@ -81,7 +81,7 @@ pipeline {
         stage ('deployment') {
             steps {
                 bat '''
-                copy "C:/Users/ak_mi/IdeaProjects/junitwebapp/target/junitwebapp.war" "C:/Program Files/Apache Software Foundation/Tomcat 9.0/webapps"
+                echo "deploying app from next job"
 
                  '''
 
