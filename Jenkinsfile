@@ -82,8 +82,9 @@ pipeline {
             steps {
                 bat '''
                 cd /Program Files/Apache Software Foundation/Tomcat 9.0/webapps
+                
                 COPY C:/Users/ak_mi/IdeaProjects/junitwebapp/target/junitwebapp.war
-        
+
                 
                 '''
 
