@@ -1,0 +1,26 @@
+---
+- hosts: all
+  tasks:
+  - name: Copy docker file to remote machine
+    copy:
+     src: Dockerfile
+     dest: .
+  - name: Copy war file to remote machine
+    copy:
+     src: webapp.war
+     dest: .   
+  - name: Stop the running container
+    command: docker stop customcontainer
+    ignore_errors: True
+  - name: remove the running container
+    command: docker rm customcontainer
+    ignore_errors: True
+  - name: remove the running image
+    command: docker rmi customimage
+    ignore_errors: True   
+  - name: Create the image from Docker file
+    command: sudo docker build -t customimage .
+  - name: Create and run the container
+    command: docker run -d -p 8080:8080 --name customcontainer customimage    
+
+   
