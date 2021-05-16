@@ -1,19 +1,11 @@
 pipeline {
     agent any
     tools {
-        maven 'apache-maven-3.6.3'
-        jdk 'jdk1.8.0_281'
+        maven 'apache-maven-3.8.1'
+        jdk 'java-11-openjdk-11.0.9.11-0.amzn2.0.1.x86_64'
     }
     stages {
-        stage ('Initialize') {
-            steps {
-                bat '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                '''
-
-            }
-        }
+        
         stage ('mclean') {
             steps {
                 bat '''
@@ -35,16 +27,7 @@ pipeline {
             }
         }
 
-         stage ('msonar') {
-            steps {
-                bat '''
-                     cd /Users/ak_mi/IdeaProjects/junitwebapp
-                     mvn clean verify sonar:sonar -Dsonar.login=1d118aa06502adca014746d2938226b6f18492d4
-
-                 '''
-
-            }
-        }
+         s
         stage ('mcompile') {
             steps {
                 bat '''
@@ -55,17 +38,7 @@ pipeline {
 
             }
         }
-        stage ('mowasp') {
-            steps {
-                bat '''
-                     cd C:/Program Files/OWASP/Zed Attack Proxy
-                     zap.sh -daemon -quickurl http://localhost:8080/ -quickout /tmp/myresults.xml -quickprogress
-
-                 '''
-
-            }
-        }
-
+        
 
 
         stage ('build') {
